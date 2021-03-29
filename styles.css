@@ -95,3 +95,40 @@ h6 {
   top: 9px;
   left: 9px;
 }
+
+@media only screen and (min-width: 900px) {
+
+  .container {
+    width: 46rem;
+    max-width: none;
+    height: 17.5rem;
+  }
+  .image{
+    /* float: left; */
+    width: 39%;
+    height: 100%;
+    margin: 0;
+    float:left;
+  }
+  .drawers {
+    width: auto;
+    height:100%;
+    transform: translateY(0);
+  }
+  .main{
+    width: 61%;
+    float:left;
+    margin: 0;
+    padding: 0;
+  }
+  h3{
+    font-size: 1.55em;
+    margin: 2rem 3rem 0 2.5rem
+  }
+  p{
+    margin: 10px 3rem 0 2.5rem;
+  }
+  .profile{
+    margin: 20px 3rem 0 2.5rem;
+  }
+}
