@@ -1,0 +1,97 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #ecf2f8;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+}
+
+.container {
+  width: 87%;
+  max-width: 400px;
+  min-width: 325px;
+  height: 32rem;
+  background: #fff;
+  position: fixed;
+  margin-top: -4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  height: 39%;
+  position: relative;
+  overflow: hidden;
+}
+
+.drawers {
+  width: 100%;
+  transform: translateY(-7%);
+}
+
+.main {
+  height: 61%;
+  position: relative;
+  padding: 5% 10%;
+  margin-right: 5px;
+}
+
+h3 {
+  color: #48556a;
+  line-height: 1.5;
+  font-size: 1.25em;
+}
+
+p {
+  color: #6d7f97;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h5 {
+  margin: 0;
+  padding-top: 2px;
+  font-size: 13px;
+  color: #48556a;
+}
+
+h6 {
+  color: #9eafc2;
+  margin: 0;
+  padding-top: 3px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 40px;
+  float: left;
+  margin-right: 1rem;
+}
+
+.profile {
+  margin-top: 35px;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #ecf2f8;
+  float: right;
+  margin: 5px -5px 0 10px;
+}
+
+.share-icon {
+  position: relative;
+  top: 9px;
+  left: 9px;
+}
