@@ -11,12 +11,6 @@
   <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | Article preview component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
-
 </head>
 
 <body>
@@ -34,19 +28,44 @@
       </div>
       <div class="profile">
         <img class="profile-picture" src="images/avatar-michelle.jpg" alt="Michelle Photo">
-        <div class="icon">
-          <img class="share-icon" src="images/icon-share.svg" alt="share icon">
+        <div id="icon">
+          <img id = "shareIconArrow" class="share-icon" src="images/icon-share.svg" alt="share icon">
         </div>
         <h5>Michelle Appleton</h5>
         <h6>28 Jun 2020</h6>
 
       </div>
     </div>
+
+    <div id="shareIcons">
+      <div class="arrowHead"></div>
+      <p class="share">SHARE</p>
+      <a href="https://www.facebook.com/"><img src="images/icon-facebook.svg" alt="Facebook Icon" class="img-rounded center-block"></a>
+      <a href="https://www.twitter.com/"><img src="images/icon-twitter.svg" alt="Twitter Icon" class="img-rounded center-block"></a>
+      <a href="https://www.pinterest.com/"><img src="images/icon-pinterest.svg" alt="Pinterest Icon" class="img-rounded center-block"></a>
+    </div>
   </div>
 
+  <script>
+  document.getElementById("icon").addEventListener("click", function(){
+    let e = document.getElementById("shareIcons");
+    let icon = document.getElementById("icon");
+    let iconArrow = document.getElementById('shareIconArrow')
 
-  <!-- Share -->
+    if (e.style.display === "block") {
+      e.style.display = "none";
+      iconArrow.classList.remove("iconArrowPressed");
+      icon.style.background = "#ecf2f8";
 
+
+    } else {
+      e.style.display = "block";
+      iconArrow.classList.add("iconArrowPressed");
+      icon.style.background = "#6d7f97";
+    }
+  });
+
+  </script>
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
